@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 бер 2015, 19:21:58
+    Author     : student
+*/
+body {
+    margin: 0;
+    text-align: center;
+    background-color: lightgray;
+    font: 10pt verdana;
+}
+#main_box {
+    background-color: white;
+    border: 1px solid silver;
+    padding: 15px;
+    width: 1100px;
+    margin: 0 auto;
+    height: 700px; //TEMP
+}
+table {
+    width: 100%;
+}
+.left1, .right1 {
+    width: 220px;
+}
+#caption {
+    font: bold 24pt verdana;
+    color: mediumvioletred;
+    text-shadow: 5px 3px linen, 0 0 70pt navy;
+}
+#left_bar {
+    width: 250px;
+    float: left;
+    height: 450px; //temp
+    border: 1pt solid silver;
+    border-radius: 10px;
+}
+#content_bar {
+    margin-left: 250px;
+}
