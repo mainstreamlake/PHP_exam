@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset=utf-8">
         <title><?=$page->title?></title> <!--Шаблон для переопределения заголовка страницы-->
         <link rel="stylesheet" href="res/styles/base.css">
         <link rel="stylesheet" href="<?=$page->style?>">

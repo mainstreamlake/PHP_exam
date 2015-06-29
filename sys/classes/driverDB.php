@@ -19,6 +19,7 @@
             or die('Ошибка соединения с сервером БД: '.mysql_error());
         mysql_select_db($this->db_name, $this->db_conn)
             or die('Ошибка выбора БД: '.mysql_error());
+        mysql_query("SET NAMES utf8"); //Чтобы выводило кириллицу
     }
     
     private function disconnect() {
