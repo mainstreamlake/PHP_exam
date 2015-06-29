@@ -28,8 +28,37 @@
                 <td class="t1">E-mail:</td>
                 <td class="t2">
                     <input type="email" id="edit4" name="email" 
-                           placeholder="Образец: myemail@server.com" required>
+                        placeholder="Образец: myemail@server.com" required>
                 </td>
+            </tr>
+            <tr>
+                <td class="t1">Статус:</td>
+                <td class="t2">
+                    <input type="radio" id="r1" name="status" value="prep">Преподаватель
+                    <input type="radio" id="r2" name="status" value="stud">Студент
+                <td/>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <table>
+            <tr>
+                <td class="t1">Привязка реального человека:</td>
+                <td class="t2">
+                    <?php
+                    /*
+                        $fstatus = filter_input(INPUT_POST, 'status');
+                        if (isset($fstatus)) {
+                            if ($fstatus==='prep') {
+                                include 'sys/webforms/prepform.php';
+                            } elseif ($fstatus==='stud') {
+                                include 'sys/webforms/studform.php';
+                            }
+                        }
+                     */
+
+                    ?>
+                <td/>  
             </tr>
         </table>
     </fieldset>
