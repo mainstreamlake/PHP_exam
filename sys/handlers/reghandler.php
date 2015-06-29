@@ -4,6 +4,7 @@ $login = filter_input(INPUT_POST, 'login');
 $pass1 = filter_input(INPUT_POST, 'pass1');
 $pass2 = filter_input(INPUT_POST, 'pass2');
 $email = filter_input(INPUT_POST, 'email');
+$status = filter_input(INPUT_POST, 'status');
 
 //Любое регулярное выражение ограничивается двумя слэшами
 $pattern1 = '/^[a-z][a-zA-Z0-9_-]{3,11}$/';
@@ -23,11 +24,13 @@ if(!preg_match($pattern1, $login)) {
     echo '<span style="color: red">Пароли не совпадают</span>';
 } elseif($users->Search_L($login)){
     echo '<span style="color: red">Логин занят</span>';
+} elseif(!$status){
+    echo '<span style="color: red">Вы не выбрали свой статус</span>';
 } else {
     $login_s = htmlspecialchars($login);
     $pass1_s = htmlspecialchars($pass1);
     $email_s = htmlspecialchars($email);
-    $status = 'user';
+    $status = htmlspecialchars($status);
     $regdate = date('Y-m-d H:i:s');
     $pass = md5($pass1_s);
     $users->Add($login_s, $pass, $email_s, $status, $regdate);

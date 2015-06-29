@@ -7,7 +7,11 @@
             <h2 id="caption">Сайт тестирования знаний</h2>
         </td>
         <td class="right1">
-            tel: +38-033-333-33-33
+            Учебная часть: 
+            <br>
+            +38-068-470-61-65
+            <br>
+            email: zavuch_kiev@itstep.org
         </td>
     </tr>
     <tr>

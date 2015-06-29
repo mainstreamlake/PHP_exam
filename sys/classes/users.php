@@ -1,10 +1,10 @@
 <?php
     require 'sys/classes/driverDB.php'; //Подключаем внешний класс
     class Users extends DriverDB { //Наследование, Для интерфейсов - implements;
-        public function Add($login, $pass, $email, $status, $regdate) {
-            $query = "INSERT INTO users (login, password, email, status, regdate) ";
+        public function AddUser($login, $pass, $email, $status, $idnumber, $regdate) {
+            $query = "INSERT INTO users (login, password, email, status, idnumber, regdate) ";
             $query .= "VALUES ";
-            $query .= "('$login', '$pass', '$email', '$status', '$regdate')";
+            $query .= "('$login', '$pass', '$email', '$status', '$idnumber', '$regdate');";
             $this->executeNonQuery($query);
         }
         
